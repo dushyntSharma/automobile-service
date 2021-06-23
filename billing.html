@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<body style="background:url(rbill.jpg); background-repeat:no-repeat; background-size:cover;min-height:50% width:100%">
+<center>
+<h1>BILLING</h1>
+<style>
+  body {
+    background-color: silver;
+     text-align:initial;
+}
+h1
+{
+	background: black;
+    color: white;
+    text-align: center;
+	}
+</style>
+
+<form action="billing.php" method="POST">
+              <table>
+                <tr>
+
+
+</tr>
+<tr>
+ <td style="color: black">Bill_NO:
+         <input type="text"  placeholder=number name="bill_no" size="20"
+         maxlength="10" required>
+       </td>
+     </tr>
+     <tr>
+   <td style="color: black">Date:
+         <input type="text"  placeholder=date name="date" size="20"
+         maxlength="50" required>
+       </td>
+     </tr>
+     <tr>
+   <td style="color: black">Vehicle NO:
+       <input type="text"  placeholder=number name="veh_no" Size="20"
+       maxlength="10" required>
+     </td>
+   </tr>
+   <tr>
+       <td style="color: black">Branch_ID:
+       <input type="text"  placeholder=Id name="bra_id" Size="20"
+       maxlength="10" required>
+     </td>
+   </tr>
+   <tr>
+       <td style="color: black">Cashier_ID:
+       <input type="text"  placeholder=Id name="cas_id" Size="20"
+       maxlength="10" required>
+   </td>
+ </tr>
+   <tr>
+<td style="color: black">Branch Phno:
+	<input type="text"  placeholder=Phno name="bra_phno" size="20"
+	maxlength="10" required>
+</td>
+</tr>
+<tr>
+ <td>
+  <label style="color: black">Mode of Transmision</label>
+   <select id="Mode of Transmision" name="mod_tra" required>
+    <option selected hidden value="">Mode of transmision</option>
+<option value="Change the engine oil">cash</option>
+<option value="Change the engine oil">Debit card</option>
+<option value="Change the engine oil">Paytm</option>
+</select>
+ </td>
+</tr>
+<tr>
+  <td>
+ <label style="color: black">Services</label>
+
+   <select id="Services" name="services" required>
+    <option selected hidden value="">select services</option>
+<option value="Change the engine oil">Air conditional repair</option>
+<option value="Change the engine oil">Battery replacement</option>
+<option value="Change the engine oil">Clutch repair </option>
+<option value="Change the engine oil">Change air filter </option>
+<option value="Change the engine oil">Change oil filter</option>
+<option value="Change the engine oil">Water pump replacement</option>
+<option value="Change the engine oil">Water service</option>
+<option value="Change the engine oil">Engine service</option>
+<option value="Change the engine oil">Starter replacement</option>
+<option value="Change the engine oil">Tire replacement</option>
+<option value="Change the engine oil">Brake pad replacement</option>
+</select>
+</td>
+</tr>
+<tr>
+       <td style="color: black">Amount:
+         <input type="text"  placeholder=amount name="amount" size="20"
+         maxlength="20" required>
+       </td>
+     </tr>
+     <tr>
+<td><input type="submit" value="submit"></td>
+</tr>
+<tr>
+<td>
+	<button><a href="2.html">HOME</a></button> <button> <a href="">Print</a></button>
+</td>
+</tr>
+<center>
+</table>
+</form>
+</boby>
+</head>
+</html>

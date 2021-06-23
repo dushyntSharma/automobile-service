@@ -1,0 +1,39 @@
+<!DOCTYPE html
+<html>
+<head>
+ <title></title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <th> ownid </th>
+ <th> ownname </th>
+ <th> ownadd </th>
+ <th> ownphno </th>
+ <th> sex </th>
+ <th> vehno </th>
+ </tr>
+ <?php
+ $conn = mysqli_connect("localhost","root","","owner");
+ if($conn->connect_error) {
+ die("connection failed:". $conn-> connect_error);
+ }
+ $sql="select ownid,ownname,ownadd,ownphno,sex,vehno from owner";
+ $result=$conn->query($sql);
+ 
+ if($result->num_rows >0){
+ while ($row=$result-> fetch_assoc()){
+ echo"<tr><td>".$row["ownid"] ."</td></td>" .$row["ownname"] ."<td><td>" . $row["ownadd"] ."<td><td>" . $row["ownphno"] ."<td><td>" . $row["sex"] ."<td><td>" . $row["vehno"] ."<td><td>";
+ }
+ echo"</table>";
+ }
+ else {
+ echo "0 result";
+ }
+ $conn->close();
+ ?>
+ </table>
+ 
+ 
+ </body>
+ </html>
